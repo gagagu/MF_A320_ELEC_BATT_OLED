@@ -4,6 +4,5 @@
 .vscode/launch.json
 .vscode/ipch
 .vscode/arduino.json
-src
 _build
 _dist
