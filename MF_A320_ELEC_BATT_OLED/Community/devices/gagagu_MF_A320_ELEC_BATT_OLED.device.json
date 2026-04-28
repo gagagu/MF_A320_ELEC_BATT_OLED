@@ -1,0 +1,33 @@
+{
+    "$schema": "./mfdevice.schema.json",
+    "Info": {
+      "Label": "gagagu's MF_A320_ELEC_BATT_OLED",
+      "Type": "MF_A320_ELEC_BATT_OLED",
+      "Author": "gagagu",
+      "URL": "https://github.com",
+      "Version" : "1.0.0"
+    },
+    "Config": {
+      "Pins": [],
+      "I2C": {
+        "Enabled": true,
+        "Addresses": [
+          "0x70",
+          "0x71"
+        ]
+      }
+    },
+    "MessageTypes": [
+      {
+        "id": 0,
+        "label": "ELEC Left Battery Display",
+        "description": "$ value"
+      },
+      {
+        "id": 1,
+        "label": "ELEC  Right Battery Display",
+        "description": "$ value"
+      }
+    ]
+  }
+  
