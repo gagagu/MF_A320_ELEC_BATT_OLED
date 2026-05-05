@@ -21,12 +21,12 @@
       {
         "id": 0,
         "label": "ELEC Left Battery Display",
-        "description": "$ value"
+        "description": "$ value (999 for off)"
       },
       {
         "id": 1,
         "label": "ELEC  Right Battery Display",
-        "description": "$ value"
+        "description": "$ value (999 for off)"
       }
     ]
   }
