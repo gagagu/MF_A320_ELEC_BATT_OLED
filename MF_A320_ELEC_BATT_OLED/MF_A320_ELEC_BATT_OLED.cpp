@@ -72,17 +72,21 @@ void MF_A320_ELEC_BATT_OLED::set(int16_t messageID, char *message)
        MessageID == -1: Connector gestoppt → Display leeren               */
     switch (messageID) {
     case 0:
-        if (_battLeftValue != message) {
-            _battLeftValue  = message;
-            _battLeftDirty  = true;
-        }
+        // if (_battLeftValue != message) {
+        //     _battLeftValue  = message;
+        //     _battLeftDirty  = true;
+        // }
+        _battLeftValue  = message;
+        updateDisplayBattLeft();
         break;
  
     case 1:
-        if (_battRightValue != message) {
-            _battRightValue = message;
-            _battRightDirty = true;
-        }
+        // if (_battRightValue != message) {
+        //     _battRightValue = message;
+        //     _battRightDirty = true;
+        // }
+        _battRightValue = message;
+        updateDisplayBattRight();
         break;
  
     default:
@@ -92,15 +96,16 @@ void MF_A320_ELEC_BATT_OLED::set(int16_t messageID, char *message)
 
 void MF_A320_ELEC_BATT_OLED::update()
 {
+     updateDisplayBattLeft();
     // Nur neu zeichnen, wenn sich der Wert tatsächlich geändert hat
-    if (_battLeftDirty) {
+    //if (_battLeftDirty) {
         updateDisplayBattLeft();
-        _battLeftDirty = false;
-    }
-    if (_battRightDirty) {
+     //   _battLeftDirty = false;
+   // }
+   // if (_battRightDirty) {
         updateDisplayBattRight();
-        _battRightDirty = false;
-    }
+   //     _battRightDirty = false;
+   // }
 }
 
 // ---------------------------------------------------------------------------
@@ -122,6 +127,7 @@ void MF_A320_ELEC_BATT_OLED::setTCAChannel(byte channel)
  */
 void MF_A320_ELEC_BATT_OLED::updateDisplay(byte channel, const String &value)
 {
+        String displayStr = "";
     setTCAChannel(channel);
     oled->clearDisplay();
     oled->setTextColor(SSD1306_WHITE);
@@ -130,13 +136,14 @@ void MF_A320_ELEC_BATT_OLED::updateDisplay(byte channel, const String &value)
  
     if (value.length() == 0 || value == BATT_VALUE_INVALID) {
         // Kein gültiger Wert → leeres Display
+        oled->print(displayStr);
         oled->display();
         return;
     }
  
     // Führende Nullen so dass immer 3 Stellen angezeigt werden
     float fValue = value.toFloat();
-    String displayStr = "";
+
     if (fValue < 10.0f)       displayStr = "00";
     else if (fValue < 100.0f) displayStr = "0";
     displayStr += value;
