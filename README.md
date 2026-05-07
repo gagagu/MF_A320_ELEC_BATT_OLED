@@ -1,7 +1,7 @@
 # MF_A320_ELEC_BATT_OLED
 This ist the Mobiflight firmware for a DIY 3d printed A320 Elec Panel
 
-![alt_text](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/Bild1.jpg)
+![alt_text](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/main/images/Bild1.jpg)
 
 # ToDo
 * Power on/off functionality (will be added in next few days)
