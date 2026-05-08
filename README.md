@@ -16,3 +16,7 @@ I am using the following two Displays for my Project: [Aliexpress](https://de.al
 
 # Schematic
 ![alt_text](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/Schematic.jpg)
+
+# Install
+Download the ZIP file from the Releases and extract it into the community folder within your Mobiflight folder. It should look like this:
+![alt_text](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/install1.jpg)
