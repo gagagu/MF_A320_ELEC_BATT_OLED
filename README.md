@@ -43,5 +43,7 @@ With the Address setting you can select the OLED Display Device Type:
 * 0x71 = SH1106
 
 Than upload the config
+
 [<img src="https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/install7.jpg" width=50% height=50%>](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/install7.jpg)
 
+# Mobiflight Config
