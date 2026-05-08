@@ -47,3 +47,13 @@ Than upload the config
 [<img src="https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/install7.jpg" width=50% height=50%>](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/install7.jpg)
 
 # Mobiflight Config
+See sample Mobiflight Config in the corresponding folder.
+Important is the modification of the input value to round of two decimals and multiplay with 100 to send the value without decimal poibt to the display.
+* 27.5 will send as 275
+
+The Display will set the dot because its more realistic in view.
+
+[<img src="https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/Mobiflight1.jpg" width=50% height=50%>](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/Mobiflight1.jpg)
+[<img src="https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/Mobiflight2.jpg" width=50% height=50%>](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/Mobiflight2.jpg)
+[<img src="https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/Mobiflight3.jpg" width=50% height=50%>](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/Mobiflight3.jpg)
+[<img src="https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/Mobiflight4.jpg" width=50% height=50%>](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/Mobiflight4.jpg)
