@@ -29,4 +29,12 @@ The device will now get the newest firmware.
 ![alt_text](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/install3.jpg)
 ![alt_text](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/install4.jpg)
 
+Make an another right mouse click on the device and choose "Add device / Custom Devices / gagagu's MF_A320_ELEC_BATT_OLED" from  Menu
+![alt_text](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/install5.jpg)
+![alt_text](https://github.com/gagagu/MF_A320_ELEC_BATT_OLED/blob/main/images/install6.jpg)
 
+With the Address setting you can select the OLED Display Device Type:
+* 0x70 = SSD1306 
+* 0x71 = SH1106
+
+  
