@@ -1,0 +1,108 @@
+{
+  "Name": "Fenix A320 Elec Panel",
+  "ConfigFiles": [
+    {
+      "Label": "Fenix_A320_Overhead",
+      "FileName": "D:\\Games\\MobiflightConfig\\MSFS\\Fenix_A320\\Fenix_A320.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "dd9ec28e-7c7f-4e0e-be75-89013f13351d",
+              "Value": "(L:N_ELEC_VOLT_BAT_1)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "gagagu's MF_A320_ELEC_BATT_OLED",
+            "CustomType": null,
+            "CustomName": "gagagu's MF_A320_ELEC_BATT_OLED",
+            "MessageType": 0,
+            "Value": "$",
+            "Type": "CustomDevice"
+          },
+          "DeviceType": "CustomDevice",
+          "DeviceName": "gagagu's MF_A320_ELEC_BATT_OLED",
+          "GUID": "c90e52e1-882c-4255-94fc-d33382ca02df",
+          "Active": true,
+          "Name": "Elec Batt 1 OLED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "gagagu MF_A320_ELEC_BATT_OLED",
+            "Serial": "SN-88G-182"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Round($,2) * 100",
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "27.700000762939453",
+          "Value": "27.7"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "3b666fd0-42f6-4089-a203-87d7f1379e08",
+              "Value": "(L:N_ELEC_VOLT_BAT_2)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "gagagu's MF_A320_ELEC_BATT_OLED",
+            "CustomType": null,
+            "CustomName": "gagagu's MF_A320_ELEC_BATT_OLED",
+            "MessageType": 1,
+            "Value": "$",
+            "Type": "CustomDevice"
+          },
+          "DeviceType": "CustomDevice",
+          "DeviceName": "gagagu's MF_A320_ELEC_BATT_OLED",
+          "GUID": "53ea73b0-bca3-440a-b2b2-b8fbf57dff96",
+          "Active": true,
+          "Name": "Elec Batt 2 OLED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "gagagu MF_A320_ELEC_BATT_OLED",
+            "Serial": "SN-88G-182"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Round($,2) * 100",
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "27.600000381469727",
+          "Value": "27.6"
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}
