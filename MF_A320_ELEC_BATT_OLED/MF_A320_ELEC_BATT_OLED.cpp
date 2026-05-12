@@ -96,7 +96,6 @@ void MF_A320_ELEC_BATT_OLED::set(int16_t messageID, char *message)
 
 void MF_A320_ELEC_BATT_OLED::update()
 {
-     updateDisplayBattLeft();
     // Nur neu zeichnen, wenn sich der Wert tatsächlich geändert hat
     //if (_battLeftDirty) {
         updateDisplayBattLeft();
