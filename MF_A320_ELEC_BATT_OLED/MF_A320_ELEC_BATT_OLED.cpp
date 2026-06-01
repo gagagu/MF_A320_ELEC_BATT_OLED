@@ -35,8 +35,11 @@ void MF_A320_ELEC_BATT_OLED::attach(uint8_t addrI2C)
     }
  
     // Odd address → SSD1306, even address → SH1106
-    OLEDType type = (_addrI2C & 0x01) ? SSD1306 : SH1106;
-    oled = new (allocateMemory(sizeof(OLEDInterface))) OLEDInterface(type);
+    if (_addrI2C & 0x01) {
+        oled = new (allocateMemory(sizeof(OLEDInterface))) OLEDInterface(SSD1306);
+    } else {
+        oled = new (allocateMemory(sizeof(OLEDInterface))) OLEDInterface(SH1106);
+    }
  
     _initialised = true;
 }
@@ -134,7 +137,7 @@ void MF_A320_ELEC_BATT_OLED::updateDisplay(byte channel, const String &value)
     oled->setCursor(BATT_CURSOR_X, BATT_CURSOR_Y);
  
     if (value.length() == 0 || value == BATT_VALUE_INVALID) {
-        // Kein gültiger Wert → leeres Display
+        // Kein gültiger Wert → leeres Displa
         oled->print(displayStr);
         oled->display();
         return;
